@@ -1,0 +1,4 @@
+#!/bin/zsh
+cd "${0%/*}"
+FileTree=$(/usr/local/bin/tree ~/.Trash/)
+echo -e "*Click and drag text to scroll*\n\nFile to be scrambled and zeroed:\n\n" $FileTree > ./UserTargetFiles

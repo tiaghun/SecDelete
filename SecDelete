@@ -1,0 +1,79 @@
+#!/bin/zsh
+
+#Prep Environment
+cd "${0%/*}"
+	#Progress Bar Data
+	echo "15% Preparing work environment..." > ./Secure\ Delete\ Status.app/Contents/Resources/currentStep
+	printf '1' > ./Secure\ Delete\ Status.app/Contents/Resources/progressPercent
+	#End Progress Bar Data
+printf "true" > ./Secure\ Delete\ Status.app/Contents/Resources/isRunning
+open ./Secure\ Delete\ Status.app & disown
+sleep 1
+touch ./FileList
+touch ./UserTargetFiles
+#End Prep Environment
+
+#Get File List
+	#Progress Bar Data
+	echo "30% Indexing files in Trash..." > ./Secure\ Delete\ Status.app/Contents/Resources/currentStep
+	printf '2' > ./Secure\ Delete\ Status.app/Contents/Resources/progressPercent
+	sleep 1
+	#End Progress Bar Data
+find ~/.Trash > ./FileList
+#End File List
+
+#Parse, Scramble, Zero, Null
+TotalFiles=$(grep -c '' ./FileList)
+TargetLine=2
+x=1
+while [ $x = 1 ]
+do
+TargetFile=$(head -${TargetLine} ./FileList | tail -1)
+FileSize=$(du $TargetFile | awk -F' ' '{print $1}')
+dd if=/dev/urandom of=$TargetFile bs=1b count=$FileSize
+dd if=/dev/zero of=$TargetFile bs=1b count=$FileSize
+dd if=/dev/null of=$TargetFile bs=1b count=$FileSize
+	#Progress Bar Data
+	echo "45% Securely deleted" "$TargetLine" "of" "$TotalFiles" "files..." > ./Secure\ Delete\ Status.app/Contents/Resources/currentStep
+    printf '3' > ./Secure\ Delete\ Status.app/Contents/Resources/progressPercent
+	#End Progress Bar Data
+if [[ $TargetLine = $TotalFiles ]]
+  then
+	  #Run Cleanup Part 1
+        	#Progress Bar Data
+         	echo "60% Wiping Trash index (1 of 2)..." > ./Secure\ Delete\ Status.app/Contents/Resources/currentStep
+            printf '4' > ./Secure\ Delete\ Status.app/Contents/Resources/progressPercent
+            sleep 1
+            #End Progress Bar Data
+      sudo rm -rf ~/.Trash/*
+      dd if=/dev/urandom of=./FileList bs=1m count=1
+      dd if=/dev/zero of=./FileList bs=1m count=1
+      dd if=/dev/null of=./FileList bs=1m count=1
+      rm ./FileList
+      		#Progress Bar Data
+        	echo "75% Wiping Trash index (2 of 2)..." > ./Secure\ Delete\ Status.app/Contents/Resources/currentStep
+            printf '5' > ./Secure\ Delete\ Status.app/Contents/Resources/progressPercent
+            sleep 1
+          	#End Progress Bar Data
+      dd if=/dev/urandom of=./UserTargetFiles bs=1m count=1
+      dd if=/dev/zero of=./UserTargetFiles bs=1m count=1
+      dd if=/dev/null of=./UserTargetFiles bs=1m count=1
+      rm ./UserTargetFiles
+      	#Progress Bar Data
+      	echo "100% Finalizing cleanup..." > ./Secure\ Delete\ Status.app/Contents/Resources/currentStep
+        printf '6' > ./Secure\ Delete\ Status.app/Contents/Resources/progressPercent
+        sleep 1
+      	#End Progress Bar Data
+      x=2
+      #End Run Cleanup Part 1
+      
+      #Run Cleanup Part 2
+      printf 'false' > ./Secure\ Delete\ Status.app/Contents/Resources/isRunning
+      echo "0%" > ./Secure\ Delete\ Status.app/Contents/Resources/currentStep
+      #End Run Cleanup Part 2
+  else
+      TargetLine=$(( $TargetLine + 1 ))
+fi
+done
+
+
