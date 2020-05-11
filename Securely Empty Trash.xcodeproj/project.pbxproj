@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C350199A244C017D0022EBDF /* burning.icns in Resources */ = {isa = PBXBuildFile; fileRef = C3501999244C017D0022EBDF /* burning.icns */; };
+		C35019A2244C03AB0022EBDF /* burnt.icns in Resources */ = {isa = PBXBuildFile; fileRef = C35019A1244C03AB0022EBDF /* burnt.icns */; };
+		C35019A8244C24930022EBDF /* Secure Delete Status.app in Resources */ = {isa = PBXBuildFile; fileRef = C35019A7244C24930022EBDF /* Secure Delete Status.app */; };
+		C35B9E372449453E00E60551 /* SecDelete in Resources */ = {isa = PBXBuildFile; fileRef = C35B9E362449453E00E60551 /* SecDelete */; };
+		C35B9E3A2449AA0D00E60551 /* ShowUserTargetFiles in Resources */ = {isa = PBXBuildFile; fileRef = C35B9E392449AA0D00E60551 /* ShowUserTargetFiles */; };
+		C38ADC142449181900EC648C /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38ADC132449181900EC648C /* AppleScriptObjC.framework */; };
+		C38ADC172449181900EC648C /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC162449181900EC648C /* AppDelegate.applescript */; };
+		C38ADC192449181E00EC648C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38ADC182449181E00EC648C /* Assets.xcassets */; };
+		C38ADC1C2449181E00EC648C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38ADC1A2449181E00EC648C /* MainMenu.xib */; };
+		C38ADC1F2449181E00EC648C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC1E2449181E00EC648C /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C3501999244C017D0022EBDF /* burning.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = burning.icns; sourceTree = "<group>"; };
+		C35019A1244C03AB0022EBDF /* burnt.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = burnt.icns; path = ../../../../Desktop/SecDelete/Resources/Icons/burnt.icns; sourceTree = "<group>"; };
+		C35019A7244C24930022EBDF /* Secure Delete Status.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "Secure Delete Status.app"; sourceTree = "<group>"; };
+		C35B9E362449453E00E60551 /* SecDelete */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = SecDelete; sourceTree = "<group>"; };
+		C35B9E38244945C800E60551 /* Securely Empty Trash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Securely Empty Trash.entitlements"; sourceTree = "<group>"; };
+		C35B9E392449AA0D00E60551 /* ShowUserTargetFiles */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ShowUserTargetFiles; sourceTree = "<group>"; };
+		C38ADC102449181900EC648C /* Securely Empty Trash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Securely Empty Trash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C38ADC132449181900EC648C /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		C38ADC162449181900EC648C /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
+		C38ADC182449181E00EC648C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C38ADC1B2449181E00EC648C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C38ADC1D2449181E00EC648C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C38ADC1E2449181E00EC648C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C38ADC282449243100EC648C /* en */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = en; path = en.lproj/trash.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C38ADC0D2449181900EC648C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C38ADC142449181900EC648C /* AppleScriptObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C38ADC072449181900EC648C = {
+			isa = PBXGroup;
+			children = (
+				C35019A7244C24930022EBDF /* Secure Delete Status.app */,
+				C35019A1244C03AB0022EBDF /* burnt.icns */,
+				C3501999244C017D0022EBDF /* burning.icns */,
+				C35B9E392449AA0D00E60551 /* ShowUserTargetFiles */,
+				C35B9E362449453E00E60551 /* SecDelete */,
+				C38ADC152449181900EC648C /* Securely Empty Trash */,
+				C38ADC122449181900EC648C /* Frameworks */,
+				C38ADC112449181900EC648C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C38ADC112449181900EC648C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C38ADC102449181900EC648C /* Securely Empty Trash.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C38ADC122449181900EC648C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C38ADC292449243100EC648C /* trash.icns */,
+				C38ADC132449181900EC648C /* AppleScriptObjC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C38ADC152449181900EC648C /* Securely Empty Trash */ = {
+			isa = PBXGroup;
+			children = (
+				C35B9E38244945C800E60551 /* Securely Empty Trash.entitlements */,
+				C38ADC162449181900EC648C /* AppDelegate.applescript */,
+				C38ADC182449181E00EC648C /* Assets.xcassets */,
+				C38ADC1A2449181E00EC648C /* MainMenu.xib */,
+				C38ADC1D2449181E00EC648C /* Info.plist */,
+				C38ADC1E2449181E00EC648C /* main.m */,
+			);
+			path = "Securely Empty Trash";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C38ADC0F2449181900EC648C /* Securely Empty Trash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C38ADC222449181E00EC648C /* Build configuration list for PBXNativeTarget "Securely Empty Trash" */;
+			buildPhases = (
+				C38ADC0C2449181900EC648C /* Sources */,
+				C38ADC0D2449181900EC648C /* Frameworks */,
+				C38ADC0E2449181900EC648C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Securely Empty Trash";
+			productName = "Securely Empty Trash";
+			productReference = C38ADC102449181900EC648C /* Securely Empty Trash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C38ADC082449181900EC648C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Alison E.E.";
+				TargetAttributes = {
+					C38ADC0F2449181900EC648C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C38ADC0B2449181900EC648C /* Build configuration list for PBXProject "Securely Empty Trash" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C38ADC072449181900EC648C;
+			productRefGroup = C38ADC112449181900EC648C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C38ADC0F2449181900EC648C /* Securely Empty Trash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C38ADC0E2449181900EC648C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35019A8244C24930022EBDF /* Secure Delete Status.app in Resources */,
+				C35019A2244C03AB0022EBDF /* burnt.icns in Resources */,
+				C350199A244C017D0022EBDF /* burning.icns in Resources */,
+				C35B9E3A2449AA0D00E60551 /* ShowUserTargetFiles in Resources */,
+				C35B9E372449453E00E60551 /* SecDelete in Resources */,
+				C38ADC192449181E00EC648C /* Assets.xcassets in Resources */,
+				C38ADC1C2449181E00EC648C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C38ADC0C2449181900EC648C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C38ADC1F2449181E00EC648C /* main.m in Sources */,
+				C38ADC172449181900EC648C /* AppDelegate.applescript in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C38ADC1A2449181E00EC648C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C38ADC1B2449181E00EC648C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C38ADC292449243100EC648C /* trash.icns */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C38ADC282449243100EC648C /* en */,
+			);
+			name = trash.icns;
+			path = ../../../../Pictures/Icons/ICNS;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C38ADC202449181E00EC648C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C38ADC212449181E00EC648C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C38ADC232449181E00EC648C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Securely Empty Trash/Securely Empty Trash.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = JBNRMX466G;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "Securely Empty Trash/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qcpueh.SecDelete2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C38ADC242449181E00EC648C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Securely Empty Trash/Securely Empty Trash.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = JBNRMX466G;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "Securely Empty Trash/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qcpueh.SecDelete2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C38ADC0B2449181900EC648C /* Build configuration list for PBXProject "Securely Empty Trash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38ADC202449181E00EC648C /* Debug */,
+				C38ADC212449181E00EC648C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C38ADC222449181E00EC648C /* Build configuration list for PBXNativeTarget "Securely Empty Trash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38ADC232449181E00EC648C /* Debug */,
+				C38ADC242449181E00EC648C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C38ADC082449181900EC648C /* Project object */;
+}
