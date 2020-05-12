@@ -34,7 +34,7 @@ script AppDelegate
   			set ResourcePath to current application's NSBundle's mainBundle()'s bundlePath() as text & "/Contents/Resources/"
      		do shell script quoted form of ResourcePath & ("ShowUserTargetFiles")
     		set UserTargetFiles to read ResourcePath & ("UserTargetFiles")
-      		display dialog "Securely Empty Trash v2.0.3 build 12" default answer UserTargetFiles with title "Trash Can Contents" buttons {"Close"} default button {"Close"}
+      		display dialog "Securely Empty Trash v2.0.3 build 13" default answer UserTargetFiles with title "Trash Can Contents" buttons {"Close"} default button {"Close"}
        	 end showUserTargetFiles_
   		-- End Show User Target Files
         
